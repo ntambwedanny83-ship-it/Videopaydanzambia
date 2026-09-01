@@ -3,212 +3,574 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VideoPay Zambia connects creators with businesses through paid video opportunities.">
   <title>VideoPay Zambia</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #172033;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #ffffff;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .logo span {
-      color: #087f5b;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #172033;
-      font-weight: 600;
-    }
-
-    .hero {
-      padding: 90px 7%;
-      text-align: center;
-      background: linear-gradient(135deg, #e9fff7, #ffffff);
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: #087f5b;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      font-size: 18px;
-      color: #596273;
-    }
-
-    .button {
-      display: inline-block;
-      background: #087f5b;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .section {
-      padding: 70px 7%;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 32px;
-      margin-bottom: 35px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    }
-
-    .card h3 {
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      color: #667085;
-    }
-
-    .contact {
-      background: #172033;
-      color: white;
-      padding: 60px 7%;
-      text-align: center;
-    }
-
-    .contact p {
-      margin: 10px 0 25px;
-      color: #d0d5dd;
-    }
-
-    footer {
-      background: #101827;
-      color: #aeb6c4;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Video<span>Pay</span> Zambia</div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <a href="#home" class="logo">
+        Video<span>Pay</span> Zambia
+      </a>
+
+      <button class="hamburger" id="menuButton" type="button">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#creators">Creators</a>
+        <a href="#companies">Companies</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#login" class="login-link">Login</a>
+        <a href="#signup" class="signup-link">Sign Up</a>
+      </nav>
+
+    </div>
   </header>
 
+
+  <!-- HERO -->
   <section class="hero" id="home">
-    <h1>Welcome to <span>VideoPay Zambia</span></h1>
+    <div class="container hero-content">
 
-    <p>
-      A simple and reliable platform designed to help businesses
-      and customers connect, pay, and grow in Zambia.
-    </p>
+      <div class="hero-text">
 
-    <a href="#contact" class="button">Get Started</a>
-  </section>
+        <span class="badge">🇿🇲 Built for Zambia</span>
 
-  <section class="section" id="services">
-    <h2>What We Offer</h2>
+        <h1>
+          Create videos.
+          <span>Get paid.</span>
+          Grow with businesses.
+        </h1>
 
-    <div class="cards">
-
-      <div class="card">
-        <h3>Easy Payments</h3>
-        <p>
-          Make payments simple, convenient, and accessible for your customers.
+        <p class="lead">
+          VideoPay Zambia connects talented creators with businesses
+          looking for authentic video content to promote their products
+          and services.
         </p>
+
+        <div class="hero-ctas">
+          <a href="#signup" class="button primary-button">
+            Join as a Creator
+          </a>
+
+          <a href="#companies" class="button secondary-button">
+            I'm a Company
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div>
+            <strong>Creators</strong>
+            <span>Find video opportunities</span>
+          </div>
+
+          <div>
+            <strong>Businesses</strong>
+            <span>Reach real audiences</span>
+          </div>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Business Solutions</h3>
-        <p>
-          Tools designed to help Zambian businesses manage and grow their services.
-        </p>
-      </div>
 
-      <div class="card">
-        <h3>Secure Platform</h3>
-        <p>
-          Built with security and reliability in mind for your customers and business.
-        </p>
+      <!-- HERO DASHBOARD PREVIEW -->
+      <div class="dashboard-preview">
+
+        <div class="preview-header">
+          <span>Creator Dashboard</span>
+          <span class="online-dot">●</span>
+        </div>
+
+        <div class="earnings-box">
+          <p>Available Earnings</p>
+          <h2>ZMW 2,450</h2>
+          <small>Demo preview</small>
+        </div>
+
+        <div class="preview-stats">
+
+          <div>
+            <strong>8</strong>
+            <span>Active Jobs</span>
+          </div>
+
+          <div>
+            <strong>24</strong>
+            <span>Submitted</span>
+          </div>
+
+          <div>
+            <strong>18</strong>
+            <span>Approved</span>
+          </div>
+
+        </div>
+
+        <div class="job-card">
+
+          <div>
+            <small>Featured Campaign</small>
+            <h3>Local Business Promo</h3>
+            <p>Short promotional video</p>
+          </div>
+
+          <strong>ZMW 350</strong>
+
+        </div>
+
       </div>
 
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Ready to Get Started?</h2>
 
-    <p>
-      Contact VideoPay Zambia and let's build something great together.
-    </p>
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
 
-    <a href="mailto:info@videopayzambia.com" class="button">
-      Contact Us
-    </a>
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">Simple process</span>
+
+        <h2>How VideoPay Works</h2>
+
+        <p>
+          A simple platform connecting creators and businesses.
+        </p>
+
+      </div>
+
+
+      <div class="steps">
+
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <div class="step-icon">👤</div>
+          <h3>Sign Up</h3>
+          <p>
+            Create your creator or company account.
+          </p>
+        </div>
+
+
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <div class="step-icon">🔎</div>
+          <h3>Find Opportunities</h3>
+          <p>
+            Find campaigns and businesses that need video content.
+          </p>
+        </div>
+
+
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <div class="step-icon">🎬</div>
+          <h3>Create & Submit</h3>
+          <p>
+            Create your video and submit it to the campaign.
+          </p>
+        </div>
+
+
+        <div class="step-card">
+          <span class="step-number">04</span>
+          <div class="step-icon">💰</div>
+          <h3>Get Paid</h3>
+          <p>
+            Approved work becomes available for payment.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <footer>
-    © 2026 VideoPay Zambia. All rights reserved.
+
+  <!-- CREATORS -->
+  <section class="section light-section" id="creators">
+
+    <div class="container feature-grid">
+
+      <div class="feature-text">
+
+        <span class="section-label">For Creators</span>
+
+        <h2>Turn your creativity into opportunities.</h2>
+
+        <p>
+          VideoPay Zambia gives creators a place to discover paid
+          video campaigns and build relationships with businesses.
+        </p>
+
+        <ul class="check-list">
+          <li>Discover video campaigns.</li>
+          <li>Create your creator profile.</li>
+          <li>Submit videos to businesses.</li>
+          <li>Track your submissions.</li>
+          <li>Track your earnings.</li>
+        </ul>
+
+        <a href="#signup" class="button primary-button">
+          Become a Creator
+        </a>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <div class="info-card-header">
+          <div>
+            <small>Creator Activity</small>
+            <h3>Your Campaigns</h3>
+          </div>
+
+          <span class="demo-badge">DEMO</span>
+        </div>
+
+
+        <div class="campaign">
+          <span class="campaign-icon">📱</span>
+
+          <div>
+            <strong>Product Review</strong>
+            <small>Awaiting review</small>
+          </div>
+
+          <b>ZMW 250</b>
+        </div>
+
+
+        <div class="campaign">
+          <span class="campaign-icon">🛍️</span>
+
+          <div>
+            <strong>Store Promotion</strong>
+            <small>Approved</small>
+          </div>
+
+          <b>ZMW 400</b>
+        </div>
+
+
+        <div class="campaign">
+          <span class="campaign-icon">🍽️</span>
+
+          <div>
+            <strong>Restaurant Video</strong>
+            <small>Available</small>
+          </div>
+
+          <b>ZMW 300</b>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPANIES -->
+  <section class="section" id="companies">
+
+    <div class="container feature-grid reverse">
+
+      <div class="feature-text">
+
+        <span class="section-label">For Companies</span>
+
+        <h2>Get authentic video content for your business.</h2>
+
+        <p>
+          Businesses can eventually create campaigns, find creators,
+          receive video submissions and manage promotional campaigns.
+        </p>
+
+        <ul class="check-list">
+          <li>Create marketing campaigns.</li>
+          <li>Set campaign requirements.</li>
+          <li>Receive creator submissions.</li>
+          <li>Review and approve videos.</li>
+          <li>Manage campaigns.</li>
+        </ul>
+
+        <a href="#signup" class="button primary-button">
+          Register Your Business
+        </a>
+
+      </div>
+
+
+      <div class="info-card company-preview">
+
+        <div class="info-card-header">
+          <div>
+            <small>Campaign Manager</small>
+            <h3>Business Dashboard</h3>
+          </div>
+
+          <span class="demo-badge">DEMO</span>
+        </div>
+
+
+        <div class="business-stats">
+
+          <div>
+            <strong>12</strong>
+            <span>Submissions</span>
+          </div>
+
+          <div>
+            <strong>5</strong>
+            <span>Campaigns</span>
+          </div>
+
+          <div>
+            <strong>8</strong>
+            <span>Approved</span>
+          </div>
+
+          <div>
+            <strong>4</strong>
+            <span>Creators</span>
+          </div>
+
+        </div>
+
+
+        <div class="progress-area">
+
+          <div>
+            <span>Campaign Progress</span>
+            <strong>72%</strong>
+          </div>
+
+          <div class="progress-bar">
+            <span></span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="section light-section" id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span class="section-label">Our Vision</span>
+
+        <h2>Connecting Zambian talent with Zambian businesses.</h2>
+
+        <p>
+          VideoPay Zambia is being built to create a simple bridge
+          between creators who have video skills and businesses that
+          need quality promotional content.
+        </p>
+
+      </div>
+
+
+      <div class="vision-grid">
+
+        <div class="vision-card">
+          <strong>01</strong>
+          <h3>Creator Platform</h3>
+          <p>Discover opportunities and build your profile.</p>
+        </div>
+
+        <div class="vision-card">
+          <strong>02</strong>
+          <h3>Business Campaigns</h3>
+          <p>Connect businesses with content creators.</p>
+        </div>
+
+        <div class="vision-card">
+          <strong>03</strong>
+          <h3>Video Submissions</h3>
+          <p>Manage campaign content in one place.</p>
+        </div>
+
+        <div class="vision-card">
+          <strong>04</strong>
+          <h3>Secure Payments</h3>
+          <p>Payment functionality will be added later.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SIGN UP -->
+  <section class="cta-section" id="signup">
+
+    <div class="container cta-content">
+
+      <span class="section-label light-label">
+        Get Started
+      </span>
+
+      <h2>Ready to join VideoPay Zambia?</h2>
+
+      <p>
+        Choose whether you want to create videos for businesses
+        or promote your business through creators.
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="#creator-signup" class="button white-button">
+          Sign Up as Creator
+        </a>
+
+        <a href="#company-signup" class="button outline-button">
+          Sign Up as Company
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+      <div>
+
+        <span class="section-label">Contact</span>
+
+        <h2>Let's build something great together.</h2>
+
+        <p>
+          Have a business, campaign idea or question?
+          Contact VideoPay Zambia.
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <span>Email</span>
+
+        <a href="mailto:info@videopayzambia.com">
+          info@videopayzambia.com
+        </a>
+
+        <small>
+          Business and creator enquiries
+        </small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div>
+        <a href="#home" class="logo footer-logo">
+          Video<span>Pay</span> Zambia
+        </a>
+
+        <p>
+          Connecting Zambian creators and businesses through video.
+        </p>
+      </div>
+
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+      </div>
+
+
+      <div>
+        <h3>Creators</h3>
+        <a href="#creators">Creator Benefits</a>
+        <a href="#signup">Join as Creator</a>
+        <a href="#login">Creator Login</a>
+      </div>
+
+
+      <div>
+        <h3>Companies</h3>
+        <a href="#companies">Business Solutions</a>
+        <a href="#signup">Register Business</a>
+        <a href="#login">Company Login</a>
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © 2026 VideoPay Zambia. All rights reserved.
+      </span>
+
+      <span>
+        Built for Zambia 🇿🇲
+      </span>
+
+    </div>
+
   </footer>
+
+
+  <!-- SIMPLE MOBILE MENU -->
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function () {
+      navLinks.classList.toggle("open");
+    });
+
+    const links = navLinks.querySelectorAll("a");
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+      });
+    });
+  </script>
 
 </body>
 </html>
